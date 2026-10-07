@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Marketplace listing
+    url: https://marketplace.visualstudio.com/items?itemName=cukii.cukii-vscode
+    about: Install instructions, changelog and version history.

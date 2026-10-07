@@ -1,0 +1,44 @@
+name: Bug report
+description: Something in Cukii Chat broke or misbehaved
+title: "[bug] "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time. Reports sent from the chat (**Report a bug**
+        button) already include diagnostics — paste the link or the text here
+        and you can skip most of this form.
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What you did, what you expected, what you got instead.
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Cukii Chat version
+      description: Shown at the bottom of the chat (e.g. 2.0.171).
+    validations:
+      required: true
+  - type: dropdown
+    id: vendor
+    attributes:
+      label: Which agent was running?
+      options:
+        - Claude (Claude Code)
+        - Codex / GPT
+        - Kimi
+        - Qwen / Alibaba
+        - Grok
+        - Cursor
+        - Several / not sure
+        - Not related to an agent run
+  - type: textarea
+    id: diagnostics
+    attributes:
+      label: Diagnostics
+      description: Paste the diagnostics attached by the in-chat reporter, if you used it.
+      render: text
