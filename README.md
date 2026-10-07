@@ -28,12 +28,12 @@ changelog on the listing page.
 - VS Code 1.70+, a **trusted workspace** (the extension is off in Restricted
   Mode, because agents execute real commands).
 - At least one vendor CLI signed in with your own subscription or key. Cukii
-  Chat never asks for your vendor tokens itself — the CLIs own their
-  credentials.
+  Chat keeps credentials on your machine: CLI sign-ins stay with the CLIs;
+  API keys use VS Code secret storage.
 
 ## Privacy
 
 Bug reports you send from the chat include a screenshot of the visible chat,
 the diagnostics log and the versions involved — nothing else leaves the
 machine, and nothing is sent unless you press the button. There is no
-telemetry in the extension.
+telemetry enabled by default.
