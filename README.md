@@ -16,9 +16,11 @@ This is the public issue tracker and landing page for Cukii Chat. The source
 code is developed privately; releases ship through the Marketplace and the
 changelog on the listing page.
 
-- **Bug or regression?** [Open an issue](../../issues/new/choose). The fastest
-  way is **Report a bug** inside the chat — it attaches the diagnostics the
-  team needs and drops you here with everything pre-filled.
+- **Bug or regression?** [Open an issue](../../issues/new/choose). In Cukii
+  2.0.183 and later, use **Commands and model → Report an issue…** to sign in
+  with GitHub, review the screenshots and diagnostic logs, and publish the
+  report here. No YouGile account, invitation or repository write access is
+  needed. Earlier versions can use this repository's issue form directly.
 - **IDEs without the Microsoft Marketplace** (Cursor, Windsurf, VSCodium):
   grab the `.vsix` for your platform from the listing's version history or ask
   in an issue — an Open VSX publication is on the roadmap.
@@ -33,7 +35,20 @@ changelog on the listing page.
 
 ## Privacy
 
-Bug reports you send from the chat include a screenshot of the visible chat,
-the diagnostics log and the versions involved — nothing else leaves the
-machine, and nothing is sent unless you press the button. There is no
-telemetry enabled by default.
+GitHub issues and their attachments are public. The in-chat reporter shows the
+chat snapshot, optional screenshots and masked diagnostic logs before you
+publish. Check images and text for private information; automatic masking
+cannot recognize everything in a screenshot. You can remove the chat snapshot.
+
+GitHub sign-in uses VS Code's built-in provider. Publishing through the in-chat
+reporter sends the selected files and a temporary GitHub OAuth token over HTTPS
+to `cukii.shop`. The intake uses the token only to verify the sender and create
+the report in this repository; it does not store or log the token. VS Code
+requests GitHub's `public_repo` scope, which is broader than this single
+repository. You can instead submit an issue directly on GitHub.
+
+Signing in alone does not publish a report. Publication requires the explicit
+public-consent checkbox and **Publish on GitHub**. There is no telemetry enabled
+by default. Historical reports from the former private tracker are migrated
+only after a separate privacy review; original private evidence is not
+automatically published.

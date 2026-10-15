@@ -6,9 +6,10 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thanks for taking the time. Reports sent from the chat (**Report a bug**
-        button) already include diagnostics — paste the link or the text here
-        and you can skip most of this form.
+        Thanks for taking the time. In Cukii 2.0.183 and later, use
+        **Commands and model → Report an issue…** to publish with diagnostics.
+        You can also fill out this form directly. Issues and uploaded files are
+        public: remove tokens, account details and private project information.
   - type: textarea
     id: what
     attributes:
@@ -20,7 +21,7 @@ body:
     id: version
     attributes:
       label: Cukii Chat version
-      description: Shown at the bottom of the chat (e.g. 2.0.171).
+      description: Shown in VS Code Extensions → Cukii Chat (e.g. 2.0.183).
     validations:
       required: true
   - type: dropdown
@@ -40,5 +41,5 @@ body:
     id: diagnostics
     attributes:
       label: Diagnostics
-      description: Paste the diagnostics attached by the in-chat reporter, if you used it.
+      description: Paste reviewed diagnostic logs if available. Never include tokens, passwords or private conversations.
       render: text
