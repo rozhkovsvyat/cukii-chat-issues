@@ -6,9 +6,9 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thanks for taking the time. In Cukii 2.0.183 and later, use
-        **Commands and model → Report an issue…** to publish with diagnostics.
-        You can also fill out this form directly. Issues and uploaded files are
+        Thanks for taking the time. Fill out this form directly; no YouGile
+        account or team invitation is required. Integrated GitHub reporting is
+        being tested for Cukii 2.0.183. Issues and uploaded files are
         public: remove tokens, account details and private project information.
   - type: textarea
     id: what

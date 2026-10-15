@@ -16,11 +16,12 @@ This is the public issue tracker and landing page for Cukii Chat. The source
 code is developed privately; releases ship through the Marketplace and the
 changelog on the listing page.
 
-- **Bug or regression?** [Open an issue](../../issues/new/choose). In Cukii
-  2.0.183 and later, use **Commands and model → Report an issue…** to sign in
-  with GitHub, review the screenshots and diagnostic logs, and publish the
-  report here. No YouGile account, invitation or repository write access is
-  needed. Earlier versions can use this repository's issue form directly.
+- **Bug or regression?** [Open an issue](../../issues/new/choose). No YouGile
+  account, team invitation or repository write access is needed.
+- **Integrated reporting preview:** candidate 2.0.183 adds **Commands and model
+  → Report an issue…** with GitHub sign-in, reviewed screenshots and diagnostic
+  logs. This candidate is still in acceptance; it is not yet the Marketplace
+  release. Until it ships, use the GitHub issue form directly.
 - **IDEs without the Microsoft Marketplace** (Cursor, Windsurf, VSCodium):
   grab the `.vsix` for your platform from the listing's version history or ask
   in an issue — an Open VSX publication is on the roadmap.
@@ -33,9 +34,17 @@ changelog on the listing page.
   Chat keeps credentials on your machine: CLI sign-ins stay with the CLIs;
   API keys use VS Code secret storage.
 
+## Existing reports
+
+The first migration wave brought 68 open reports and 81 historical comments
+from the former private tracker. Their 113 reviewed attachments use immutable
+links and were verified by SHA-256. Seven screenshots containing personal or
+private project information are explicitly withheld. Closed historical cards
+remain in the private archive for a later migration phase.
+
 ## Privacy
 
-GitHub issues and their attachments are public. The in-chat reporter shows the
+GitHub issues and their attachments are public. The upcoming in-chat reporter shows the
 chat snapshot, optional screenshots and masked diagnostic logs before you
 publish. Check images and text for private information; automatic masking
 cannot recognize everything in a screenshot. You can remove the chat snapshot.
