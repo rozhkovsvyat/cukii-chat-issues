@@ -1,0 +1,7 @@
+Cukii: 2.0.178
+VS Code: 1.139.1
+OS: darwin 25.6.0 arm64
+Remote: local
+Workspace: none
+Session: 60bc3289-e418-46e5-b618-1214778b3d55
+Model: opus-5-5

@@ -1,0 +1,7 @@
+Cukii: 2.0.180
+VS Code: 1.129.1
+OS: win32 10.0.26200 x64
+Remote: local
+Workspace: repo
+Session: e62b15ef-f642-4137-8a54-e1979325f19c
+Model: opus-5-5

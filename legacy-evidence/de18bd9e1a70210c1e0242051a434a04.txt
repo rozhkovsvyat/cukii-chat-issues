@@ -1,0 +1,7 @@
+Cukii: 2.0.173
+VS Code: 1.139.1
+OS: darwin 25.6.0 arm64
+Remote: local
+Workspace: none
+Session: 1323a558-6ba7-4070-9202-95e4b113a307
+Model: codex:gpt-6-astra

@@ -1,0 +1,9 @@
+Cukii: 2.0.178
+VS Code: 1.129.1
+OS: win32 10.0.26200 x64
+Remote: local
+Workspace: repo
+Session: 92d30ed2-2442-4b60-91af-f367e7aeef8d
+Model: qwen-3-8-max
+2026-10-12T09:54:20.386Z bridge.run.started {"sessionId":"92d30ed2-2442-4b60-91af-f367e7aeef8d","model":"qwen-3-8-max","runId":"4451769c-e265-46dc-acd4-22561e41db4c"}
+2026-10-12T09:54:21.754Z bridge.child.spawned {"sessionId":"92d30ed2-2442-4b60-91af-f367e7aeef8d","model":"qwen-3-8-max","pid":27304}

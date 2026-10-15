@@ -1,0 +1,7 @@
+Cukii: 2.0.172
+VS Code: 1.129.1
+OS: win32 10.0.26200 x64
+Remote: local
+Workspace: repo
+Session: aa749d98-78dc-4a3f-bf3d-81709e47f26d
+Model: codex:gpt-6-astra
