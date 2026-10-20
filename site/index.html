@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Cukii Chat — one VS Code chat for the coding CLIs you already pay for."
+    />
+    <title>Cukii Chat — Install</title>
+    <link rel="icon" href="assets/icon.png" type="image/png" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header>
+      <div class="nav-inner">
+        <a class="brand" href="#top">
+          <img src="assets/icon.png" width="40" height="40" alt="" />
+          <span>Cukii Chat</span>
+        </a>
+        <nav aria-label="Page sections">
+          <ul>
+            <li><a href="#get-started">Get started</a></li>
+            <li><a href="#remote-ssh">Remote SSH</a></li>
+            <li><a href="#reporting">Reporting</a></li>
+            <li><a href="#faq">FAQ</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="top" aria-labelledby="hero-title">
+        <img
+          class="hero-icon"
+          src="assets/icon.png"
+          width="96"
+          height="96"
+          alt="Cukii Chat icon"
+        />
+        <h1 id="hero-title">Cukii Chat</h1>
+        <p class="tagline">Your coding CLIs, in VS Code</p>
+        <p class="lead">
+          One VS Code chat for the coding CLIs you already pay for — Claude Code,
+          Codex, Kimi Code, Qwen Code, Grok and Cursor agent. Cukii Chat runs the
+          real vendor CLI under your own subscription and shows it as one chat.
+        </p>
+        <div class="actions">
+          <a
+            class="btn btn-primary"
+            href="https://marketplace.visualstudio.com/items?itemName=cukii.cukii-vscode"
+            >Install from Marketplace</a
+          >
+          <a
+            class="btn btn-secondary"
+            href="https://github.com/rozhkovsvyat/cukii-chat-issues/issues"
+            >GitHub issues</a
+          >
+        </div>
+      </section>
+
+      <section id="get-started" aria-labelledby="steps-heading">
+        <h2 id="steps-heading">Get started in three steps</h2>
+        <ol class="steps">
+          <li>
+            <strong>Install Cukii</strong>
+            Install the extension from the VS Code Marketplace. Use a trusted
+            workspace — the extension stays off in Restricted Mode because agents
+            run real commands.
+          </li>
+          <li>
+            <strong>Manage accounts → Install / Log in</strong>
+            Pick a vendor you already pay for. <strong>Manage accounts →
+            Install</strong> downloads that CLI. On macOS and Linux you need
+            <code>curl</code> and <code>tar</code>; Install downloads Node.js for
+            you. On Windows, Install uses <code>npm</code> when it is on
+            <code>PATH</code>, or installs the current Node.js LTS with winget.
+            Then sign in with that vendor.
+          </li>
+          <li>
+            <strong>Choose a model and send</strong>
+            Open the chat, pick the model for your signed-in CLI, and send your
+            first message. Tool calls and diffs appear in the same thread.
+          </li>
+        </ol>
+      </section>
+
+      <section id="remote-ssh" aria-labelledby="ssh-heading">
+        <h2 id="ssh-heading">Remote SSH</h2>
+        <div class="callout">
+          <p>
+            In a Remote-SSH window, install the extension and sign in <em>on the
+            remote</em>. The CLI runs on the remote host, alongside your workspace.
+          </p>
+          <p>
+            Vendor sign-in usually opens a page in your <strong>local</strong>
+            browser. If it does not, copy the <code>https</code> link from the
+            login terminal. For Codex, you can also copy the link from the Output
+            channel <strong>Cukii Chat · codex login</strong>.
+          </p>
+        </div>
+      </section>
+
+      <section id="reporting" aria-labelledby="report-heading">
+        <h2 id="report-heading">Reporting bugs</h2>
+        <div class="callout callout-warning">
+          <p>
+            <strong>GitHub reports are public.</strong> Issues and files linked
+            from them can be read by anyone on the internet.
+          </p>
+          <p>
+            From the extension, use <strong>Commands and model → Report an issue…</strong>.
+            Sign in with GitHub through VS Code, review the report text, chat
+            snapshot, screenshots and diagnostic logs, then press
+            <strong>Send</strong>. Signing in alone does not publish anything —
+            check images and text for private information before you send.
+          </p>
+          <p>
+            To report a bug you can also
+            <a href="https://github.com/rozhkovsvyat/cukii-chat-issues/issues/new/choose"
+              >open an issue on GitHub</a
+            >. No YouGile account, team invitation or repository write access is
+            needed.
+          </p>
+        </div>
+      </section>
+
+      <section id="faq" aria-labelledby="faq-heading">
+        <h2 id="faq-heading">FAQ</h2>
+        <dl class="faq">
+          <dt>Which vendor accounts do I need?</dt>
+          <dd>
+            At least one paid (or otherwise entitled) account for a supported
+            coding CLI — for example Claude Code, Codex, Kimi Code, Qwen Code,
+            Grok or Cursor agent. Cukii does not replace those subscriptions; it
+            runs the vendor&apos;s CLI locally and surfaces it in one chat UI.
+          </dd>
+
+          <dt>How does Remote SSH change install and sign-in?</dt>
+          <dd>
+            Install and CLI sign-in happen in the remote environment where your
+            code lives. Browser-based login still runs on your local machine when
+            possible; if the browser does not open, use the manual
+            <code>https</code> login link from the terminal or Codex output as
+            described above.
+          </dd>
+
+          <dt>What happens to my data when I report on GitHub?</dt>
+          <dd>
+            Published issues and attachments are public. The in-chat reporter shows
+            what will be sent before publication. VS Code may request GitHub
+            scopes such as <code>public_repo</code> and <code>read:user</code>;
+            sending a report can pass selected files and an OAuth token
+            over HTTPS to <code>cukii.shop</code> so the intake can verify you and
+            create the issue here — the token is not stored or logged. You can
+            skip that path and file an issue directly on GitHub instead.
+          </dd>
+        </dl>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        Public issue tracker for Cukii Chat. Extension source is developed
+        privately; releases ship through the
+        <a href="https://marketplace.visualstudio.com/items?itemName=cukii.cukii-vscode"
+          >Marketplace listing</a
+        >.
+      </p>
+    </footer>
+  </body>
+</html>
