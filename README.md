@@ -55,8 +55,8 @@ Signing in does not publish a report. Review the text and files, then press
 **Send**. Pressing **Send** publishes them publicly. VS Code requests the
 GitHub scopes `public_repo` and
 `read:user`. `public_repo`
-is broader than this one repository. The reporter sends the files and a
-short-lived OAuth token over HTTPS to `cukii.shop`. The intake uses the token
+is broader than this one repository. The reporter sends the files and an
+OAuth token over HTTPS to `cukii.shop`. The intake uses the token
 only to verify you and create the issue here. It does not store or log the
 token. You can instead open an issue directly on GitHub.
 
